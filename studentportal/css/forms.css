@@ -1,0 +1,152 @@
+:root {
+  --dark-blue-solid: rgb(38,65,60);
+  --form-element-border: #d9d9d9;
+  --white: rgb(255, 255, 255);
+  --poppins: 'Poppins', sans-serif;
+}
+
+#form-admin {
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+}
+
+form button {
+  text-align: center;
+}
+
+#form-admin input[type="text"], input[type="email"], input[type="tel"], input[type="password"], select {
+  border: 1px solid var(--form-element-border);
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: var(--poppins);
+  margin: 10px 0;
+  padding: 10px 20px;
+  width: 80%;
+}
+
+#form-admin input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+  background-color: var(--white);
+  font-size: 17px;
+}
+
+#form-admin  input[type="submit"], button {
+  border: 1px solid var(--form-element-border);
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  font-family: var(--poppins);
+  margin: 10px 0;
+  padding: 10px 20px;
+  /* width: 80%; */
+}
+
+#form-admin > p {
+  line-height: 1;
+  margin: 0;
+  padding: 20px 0;
+  text-align: left;
+}
+
+#form-admin  label {
+  font-weight: bold;
+}
+
+#form-admin  textarea {
+  border: 1px solid var(--form-element-border);
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: var(--poppins);
+  margin: 10px 0;
+  min-height: 100px;
+  padding: 10px 20px;
+  width: 80%;
+}
+
+input[type="submit"], button {
+  padding: 10px 40px;
+  width: auto;
+}
+input[type="submit"], button a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+small {
+  display: block;
+}
+/*
+.card {
+	margin: 5%;
+}
+*/
+.main .card {
+
+	width: 95%;
+}
+
+
+
+
+#profile_edit > p {
+  line-height: 1;
+  margin: 0;
+  padding: 20px 0;
+  text-align: left;
+}
+
+#profile_edit input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+    background-color: var(--white);
+    font-size: 17px;
+}
+#profile_edit input[type="submit"], button {
+  border: 1px solid var(--form-element-border);
+  border-radius: 25px;
+  cursor: pointer;
+  display: block;
+  font-family: var(--poppins);
+  margin: 10px 0;
+  padding: 10px 20px;
+  /* width: 80%; */
+}
+
+#profile_edit textarea {
+  border: 1px solid var(--form-element-border);
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: var(--poppins);
+  margin: 10px 0;
+  min-height: 100px;
+  padding: 10px 20px;
+  width: 80%;
+}
+#profile_edit label {
+  font-weight: bold;
+}
+
+#profile_edit input[type="text"], input[type="email"], input[type="tel"], input[type="password"], select {
+  border: 1px solid var(--form-element-border);
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: var(--poppins);
+  margin: 10px 0;
+  padding: 10px 20px;
+  width: 80%;
+}
+
+#avatar img {
+  border-radius: 50%;
+  max-width: 300px;
+}
+
+.profile_edit_wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+#profile_edit {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    background: #ffffff;
+    padding: 5%;
+}

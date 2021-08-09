@@ -1,0 +1,299 @@
+/* Style Additions and suggestions by Alex */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/* Setting Color and Font Variables */
+:root {
+  --dark-blue-solid: rgb(38,65,60);
+  --form-element-border: #d9d9d9;
+  --white: rgb(255, 255, 255);
+  --poppins: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* adding a watermarked image to the background */
+body {
+  background-attachment: fixed;
+  background-blend-mode: saturation;
+  background-color: rgba(250, 250, 250, 0.95);
+  background-image: linear-gradient(black, black), url(/lbcc/cosw30/alpha-team-project/images/hero-lbcc-completions.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--poppins);
+  height: 100vh;
+}
+
+header {
+  background-color: var(--dark-blue-solid);
+  width: 100%;
+}
+
+nav {
+  background-color: #8AB0AB;
+  text-align: center;
+}
+nav ul {
+  padding: 20px;
+}
+nav li {
+  display: inline;
+  padding: 50px;
+}
+
+
+
+article {
+  margin: 0 auto;
+  padding: 50px;
+  width: 80%;
+}
+
+/* took style from WRAPPER */
+form {
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: 15px 15px 20px rgba(0,0,0,0.1);
+  background-color: #8AB0AB;
+  /* height: 800px; removed the defined height */
+  /* removing the form padding */
+  margin: 0 auto;
+  padding: 0 0 50px 0; /* extra spacing at the bottom of the form */
+  text-align: center;
+  width: 650px;
+}
+
+form h2 {
+  background: var(--dark-blue-solid);
+  border-radius: 15px 15px 0 0;
+  color: var(--white);
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 70px;
+  margin: 0 0 50px 0;
+  padding: 10px;
+  text-align: center;
+  user-select: none;
+}
+
+form button {
+  text-align: center;
+}
+
+form input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="submit"], select, button {
+  border: 1px solid var(--form-element-border);
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: var(--poppins);
+  margin: 10px 0;
+  padding: 10px 20px;
+  width: 80%;
+}
+
+form input[type="text"], input[type="email"], input[type="tel"], input[type="password"] {
+  background-color: var(--white);
+  font-size: 17px;
+}
+
+form input[type="submit"], button {
+  border: 1px solid var(--form-element-border);
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: var(--poppins);
+  margin: 10px 0;
+  padding: 10px 20px;
+  width: 80%;
+}
+
+input[type="submit"], button {
+  padding: 10px 40px;
+  width: auto;
+}
+input[type="submit"], button a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+small {
+  display: block;
+}
+
+.logo-loggedout {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+a.button{
+    text-transform: none;
+    text-align: center;
+    background-color: var(--dark-blue-solid);
+    border: var(--form-element-border);
+    color: var(--white);
+    padding: 10px 40px;
+    width: auto;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: var(--poppins);
+    text-decoration:none;
+}
+
+input[type="submit"] {
+    text-transform: none;
+    text-align: center;
+    background-color: var(--dark-blue-solid);
+    border: var(--form-element-border);
+    color: var(--white);
+    padding: 10px 40px;
+    width: auto;
+    border-radius: 25px;
+    cursor: pointer;
+    
+}
+
+/*..................................................*/
+/*background video*/
+.video-block {
+    margin: 0 auto;
+    padding:0 0 10px 0;
+}
+
+#myVideo {
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 177.77777778vh;
+    min-width: 100%;
+    min-height: 56.25vw;
+}
+
+.video-p{
+    text-align:center;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+        background: rgba(255, 255, 255, 0.6);
+    color: #f1f1f1;
+    margin: 0% auto;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+.index-section {
+    margin: 223px auto 0;
+}
+
+.index-article {
+    margin: 0 auto;
+    padding: 50px;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: -30px;
+    width: 100%;
+    z-index: 9;
+}
+
+/*
+ form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+ 
+}
+form .field input:focus,
+form .field input:valid{
+  border-color: #26413c;
+}
+ form .field label{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  
+}
+form .field input:focus ~ label,
+form .field input:valid ~ label{
+  top: 0%;
+  font-size: 16px;
+  color: #26413C;
+  background: #fff;
+ 
+  border-radius: 5px;
+}
+form .content{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+form .field input[type="submit"] {
+  color: #fff;
+  background-color: #3E505B;
+  border: #d9d9d9;
+  padding-left: 0;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: none;
+  transition: all 0.3s ease;
+  border-radius: 35px;
+  width: 100%;
+  outline: 1px;
+  
+}
+form .field input[type="submit"]:active{
+  transform: scale(0.95);
+  color: #3E505B;
+  font-size: 35px;
+  background: #fff;
+}
+*/

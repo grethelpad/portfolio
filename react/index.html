@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <!-- CSS -->
+<link rel="stylesheet" href="style.css">
+<!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="navbar">
+    <header>React</header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li>
+        <a class="nav-link" href="#Skills_to_have_before_you_start"
+          >Skills to have before you start</a
+        >
+      </li>
+      <li>
+          <a class="nav-link" href="#Pros_and_Cons">Pros and Cons</a>
+        </li>
+      <li>
+        <a class="nav-link" href="#React_101">React 101</a>
+      </li>
+      <li><a class="nav-link" href="#Resources">Resources</a></li>
+  
+  
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+  
+  <img src="https://miro.medium.com/max/3600/1*HSisLuifMO6KbLfPOKtLow.jpeg">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <article>
+        <p>
+          React is an open-source JavaScript library created by Facebook that is used to build UI components. This library is use as a base to develope mobile applications or single-page websites. It is used for handling the view layer for web and mobile apps. ReactJS allows us to create reusable UI components. It is currently one of the most popular JavaScript libraries and has a strong foundation and large community behind it.
+        </p>
+  
+        <p>
+          According to React official website, following is the definition −
+  
+  "React is a library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time. Lots of people use React as the V in MVC. React abstracts away the DOM from you, offering a simpler programming model and better performance. React can also render on the server using Node, and it can power native apps using React Native. React implements one-way reactive data flow, which reduces the boilerplate and is easier to reason about than traditional data binding."
+        </p>
+        <p>Like Javascript you display your out put by targeting the element by id in HTML. (please know that any HTML opening and closing bracket tage have been removed so that you are able to see the full code.</p>
+  <code>
+  ReactDOM.render(
+  h1 Hello, world! h1,
+  document.getElementById('root')
+  );</code>
+      </article>
+    </section>
+    <section class="main-section" id="Skills_to_have_before_you_start">
+      <header>Skills to have before you start</header>
+      <article>
+        <p>Before starting with React.JS, you should have intermediate experience in:</p>
+        <ul>
+          <li>
+              <b>HTML and CSS</b> <br>
+            Each Front End Developer begins their learning with HTML and CSS. So before you begin figuring out how to respond you ought to have great order on composing HTML and CSS. You should realize how to compose semantic HTML labels, how to compose CSS selectors, how to utilize classes, how to actualize a CSS reset, box model, how to reset to fringe box, flexbox, how to compose responsive web applications including media questions and how to fabricate a frontend application utilizing HTML and CSS.
+          </li>
+          <li>
+            <b>  Git</b> <br>
+            You ought to have a reasonable knowledge of how Git stages work. Engineers utilize the order of Git to follow the form of your documents, so figure out how to utilize all the orders, for example, push, pull, add, submit, and so forth Additionally find out about consolidating, fanning, dealing with combining clashes, and so on.
+          </li>
+          <li>
+            <b>JavaScript</b><br>
+            No matter what… you can’t get better at React if your javascript fundamentals are not clear. It is one of the essential skills to learn before moving to react. Javascript is one of the most confusing languages for developers and it ignores small errors that can create a problem in your project if you won’t notice it earlier. So make sure that you first clear your basic concept about javascript.
+          </li>
+        </ul>
+      </article>
+    </section>
+  
+    <section class="main-section" id="Pros_and_Cons">
+      <header>Pros and Cons</header>
+      <article>
+          <p>With every programm there are always pros and cons. They are as follows:</p>
+          <p>Pros:</p>
+          <ul>
+            <li>
+             Once you have the fundamental down you are able to learn it fairly easy.
+            </li>
+            <li>
+             Creating dynamic Web applications becomes easier because it provides less coding and gives more functionality.
+            </li>
+            <li>
+             Reuseable componets is made up of multiple components, and each component has its own logic and controls. These components are responsible for outputting a small, reusable piece of HTML code which can be reused wherever you need them
+            </li>
+          </ul>
+          <p>Cons:</p>
+          <ul>
+            <li>
+             Having HTML syntax in JavaScript code can seem confusing for young developers, so they’ll need time to get used to it.
+            <li>
+             Documentation for ReactJS and its related libraries is often lacking.
+            </li>
+            <li>
+              ReactJS is not an all-in-one tool for creating a whole application.
+            </li>
+          </ul>
+      </article>
+    </section>
+  
+  
+    <section class="main-section" id="React_101">
+      <header>React 101</header>
+      <article>
+        <h3>Introducing JSX</h3>
+        <p> The best way to use react is by using JSX which is an extened syntax of Javascript. JSX is like a template language with the power of Javascript it. Take a look at the following code: </p><code>const element = h1 Hello, world! /h1 ;</code>
+        <p> Now JSX is not required by react but it is a tool that is helpful as a visual when working with the inside UI Javascript.</p>
+        <h3>Rendering Elements</h3>
+       The next concept you should learn is rendering elements. Elements are the building blocks of React because an element decribes what you want to see on the screen. For example:</p>
+      <code>div id="root" /div</code>
+      <p>In the example above you see that root is the name of the id this is what is managed by React DOM,Document Object Model. When you are working with a prexsisting website and would like to incoropate react you would need to pass the element throught two renderings. </p><code>const element = h1 Hello, world h1;
+  ReactDOM.render(element, document.getElementById('root'));</code>
+      <p> The good thing about react is that you only have to call the render function once. Its important to know that react only updates when necessary.</p>
+      <h3>Components and Props</h3>
+      <p> The next step to learn are components and props, which are made up of elements. Componenets allow you to spilt the UI into an independant and reuseable piece. They are the equivalant of a Javascript function where they input and then return an element. For example:</p><code> function Welcome(props) {
+    return h1 Hello, {props.name} /h1;
+      }</code>
+      Now lets say we would like to combine this first two steps rendering and components we would declare our function and the render like in the example below.<code> function Welcome(props) {
+    return <h1>Hello, {props.name}</h1>;
+  }
+  
+  const element = <Welcome name="Sara" />;
+  ReactDOM.render(
+    element,
+    document.getElementById('root')
+  );</code>
+      
+      <p> There is so much more to learn about React and well worth it because it is the furture in technology. To learn more please visit the websites in our Resources tab. Check out the following link for one of the tutorials I completed for <a href="https://codepen.io/grethel-maria/pen/OJXYLBg?editors=1010">tic tac toe.</a>
+      </article>
+    </section>
+  
+    <section class="main-section" id="Resources">
+      <header>Resources</header>
+      <article>
+        <p>The best way to get started is to start at the offical <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">REACT</a> site that allows you to complete tutorials and mini projects. This page have a really good overview of what it is like to code in react. </p>
+        
+       <p> <a href="https://reactjs.org/tutorial/tutorial.html" target="_blank">Tutorialspoint</a> is a great page to read about how react works and helps you set up of success. This page goes in to depth of JSX to best practices.</p>
+        <p>Of course our final resouce page is  <a href="https://www.w3schools.com/react/react_getstarted.asp" target="_blank">w3schools.com</a> as we have seen this semester this site has a magnatuide of information and breaks down everything for you. This helps you with learning ES6,JSX, and react components. </p>
+      </article>
+    </section>
+  
+  
+   
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <article>
+        <ul>
+          <li>
+            All the documentation in this page is taken from
+            <a
+              href="https://reactjs.org/"
+              target="_blank"
+              >React</a
+            >
+          </li>
+        </ul>
+      </article>
+    </section>
+  
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>

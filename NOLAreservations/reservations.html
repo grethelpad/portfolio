@@ -1,0 +1,121 @@
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="city2.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <title>Reservations</title>
+
+    </head>
+<body>
+   
+    <nav class="nav">
+        <ul id="pagetop">
+            <li>
+                <a href="city2.html">Home</a>
+            </li>
+            <li>
+                <a href="city2.html#attractions">Attractions</a>
+            </li>
+            <li>
+                <a href="city2.html#eateries">Eateries</a>
+            </li>
+            <li>
+                <a href="city2.html#stay">Stay</a>
+            </li>
+            <li>
+                <a href="reservations.html">Resvervations</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1>New Orleans</h1>
+        <p>Louisiana</p>
+    </header>
+    <section class="btf">               
+        <h2 class="description2">Reservations</h2>
+        <div class="body">
+            <div class="welcome">
+                <h2>HELLO FROM NEW ORLEANS!</h3>
+                <p>Boasting such a sought-after locations in New Orleans, we ensure that our guests experience fine Southern hospitality in the rich, historic setting for which New Orleans is famous.</p>
+                <h3>Contact Us</h3>
+            </div>
+            <div class="form-container">
+                <form action="reservations.html">
+                    <fieldset class="form-group">
+                        <legend class="form-header" > 
+                            Contact me by
+                            <span class="required">*</span>
+                            
+                                <div class="wrapper">
+                                    <div class="contact-by-container">
+                                        <div class="radio-checkbox">
+                                            <input type="radio" value="telephone" name="contact_by" required>
+                                            <span>Telephone</span>
+                                        </div>
+
+                                        <div class="radio-checkbox">
+                                            <input type="radio" value="email" name="contact_by" required>
+                                            <span>Email</span>
+                                        </div>
+                                    </div>
+                                <div class="nametable">
+                                    
+                                            <input type="text" name="firstname" id="firstname" placeholder="First Name*" required>
+                                    
+                                    
+                                            <input type="text" name="lastname" id="lastname" placeholder="Last Name*" required>
+                                    
+                                </div>
+                                <div class="em-tel">
+                                    
+                                            <input type="email" name="email" id="email" placeholder="Email*" required>
+     
+
+                                            <input type="tel" name="telephone" id="telphone" placeholder="Telephone*" required>
+                                </div>       
+                                <div class="str-age">
+                                    <div class="address">
+                                            <input type="text" name="StreetAddress" id="StreetAddress" placeholder="Address">
+                                    </div>
+
+                                    <div class="age">
+                                        <label for="age">Age Group:</label>
+                                        <select id="age" name="age">
+                                            <option value="age-under-18">Under 18</option>
+                                            <option value="age-18-25">18-25</option>
+                                            <option value="26-35">26-35</option>
+                                            <option value="36-45">36-45</option>
+                                            <option value="46-55">46-55</option>
+                                            <option value="56+">56+</option>
+                                        </select>
+                                    </div>
+                                </div>   
+                                <div class="gue">
+                                    <label for="#guest">Number of guest:</label>
+                                        <input type="number" name="#guest" id="#guest" min="1" max="100" >
+                                </div>
+                                <div class="date">  
+                                    <label for="Date">Reservation Date</label>
+                                        <input type="date" name="date" id="date" >
+                                    <label for="Date"> to</label>
+                                        <input type="date" name="date" id="date" >
+                                </div>
+                                
+                                        <p>How can we best plann your trip?(comments)</p>
+                                    <textarea name="comment-area" id="comment" cols="55" rows="10"></textarea>
+                                </div>
+                            </legend>
+                    </fieldset>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>    
+    </section>
+    <div class="footimg-box2">
+        <img class="footer-img" src="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2018/07/new-orleans_2.jpg?width=1280&height=853&attachment_id=502565&ssl=1" alt="New orleans">
+    </div>
+</body>
+</html>

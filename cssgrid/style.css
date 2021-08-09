@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    background: #efefef;
+    font-family: monospace;
+    color: #333;
+  }
+  
+  .container{
+    margin: 5% 10%;
+    min-width: 600px;
+  }
+  
+  header{
+    width:100%;
+    hieght: 100px;
+    padding-top: 25px;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .container h1{
+    text-align:center;
+    background-color:#4E8098;
+    color: #fff;
+    font-family: 'Neucha', cursive;
+    padding:45px;
+    font-size:4em;
+    letter-spacing:5px;
+  }
+  nav{
+    margin:0 0 4% 0;
+  }
+  .main-nav a{
+    text-decoration:none;
+    color:#7C616C;
+    padding:10px;
+    font-size:1.4em;
+  }
+  
+  .main-nav a:hover{
+    text-decoration:none;
+    color:#11151C;
+    background-color:#CFDBD5;
+    padding:10px;
+    font-size:1.4em;
+  }
+  
+  .grid{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(350, 1fr));
+    grid-auto-flow: dense;
+    justify-content: center;
+  }
+  
+  .grid-item{
+    background-color: #fff;
+    justify-self: stretch;
+  }
+  
+  .grid-item img{
+   object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    height:100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .twobytwo{
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .onebytwo{
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  
+  .twobyone{
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  
+  footer {
+    clear:both;
+    padding: 1em;
+    background: #7C616C;
+  }
+  
+  .social{
+    position:relative;
+    text-align: center;
+    font-size:14px;
+    color:#fff;
+  }
+  
+  .social img{
+    width:5%;
+    padding:1%;
+  }
+  
