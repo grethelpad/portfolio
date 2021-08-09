@@ -2,13 +2,13 @@
 $unit_price = $_POST['resident'];
 $unit_qty = $_POST['units'];
 $student_fee = 20.00;
-
-$enrollment = ($unit_price * $unit_qty);
-
+$upi = intval($unit_price);
+$uqi = intval($unit_qty);
+$enrollment = ($upi * $uqi);
 $card_price = $_POST['card'];
 $parking_price = $_POST['park'];
 
-$total_enrollment = ($enrollment + $student_fee + $csc_price + $parking_price);
+$total_enrollment = ($enrollment + $student_fee + $card_price + $parking_price);
 
 $scholarship = rand(1,$total_enrollment);
 $balance = ($total_enrollment - $scholarship) ;
@@ -30,7 +30,7 @@ $balance = ($total_enrollment - $scholarship) ;
             <img src="https://www.lbcc.edu/sites/default/themes/dtheme/img/logo-theme.svg" alt="LBClogo">
            </li>
           <li>
-           <a href="calculator.html">Home</a>
+           <a href="index.html">Home</a>
            </li>
            <li>
            <a href="https://www.lbcc.edu/admissions-aid" target="_blank">Contact</a>
@@ -46,10 +46,10 @@ $balance = ($total_enrollment - $scholarship) ;
 		 
 		 <div class="confirmation_info">
 		  <p>
-		  	 Cost of Tuition: <?php echo $unit_qty; ?> units x <?php echo $unit_price; ?> = <?php echo $enrollment; ?> 
+		  	 Cost of Tuition: <?php echo $unit_qty; ?> units x $<?php echo $unit_price; ?> = $<?php echo $enrollment; ?> 
 		 </p>
 		  <p>
-		  	  Student Health Fee:$<?php echo $student_fee; ?> 
+		  	  Student Health Fee: $<?php echo $student_fee; ?> 
 		 </p>
 		  <p>
 		  	  College Services card: $<?php echo $card_price; ?>
@@ -75,8 +75,8 @@ $balance = ($total_enrollment - $scholarship) ;
   </div>
 </body>
 <footer>
-	
-</footer>
+            <img src="https://i1.wp.com/www.longbeachlocalnews.com/wp-content/uploads/Long-Beach-City-College.jpg?fit=1000%2C562&ssl=1">
+        </footer>
 </html>
 
 
